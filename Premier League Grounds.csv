@@ -1,0 +1,21 @@
+Team,Stadium,Capacity,Latitude,Longitude,MainR,MainG,MainB,SecondR,SecondG,SecondB
+Arsenal,Emirates Stadium,"60,704",51.555,-0.109,255,0,0,255,255,255
+Aston Villa,Villa Park,"42,785",52.509,-1.885,103,14,54,189,215,236
+Bournemouth,Dean Court,"11,329",50.735,-1.838,255,0,0,0,0,0
+Brighton & Hove Albion,Amex Stadium,"30,750",50.862,-0.083,68,114,196,255,255,255
+Burnley,Turf Moor,"21,944",53.789,-2.23,103,14,54,189,215,236
+Chelsea,Stamford Bridge,"40,834",51.482,-0.191,68,114,196,255,255,255
+Crystal Palace,Selhurst Park,"25,486",51.398,-0.085,255,0,0,68,114,196
+Everton,Goodison Park,"39,572",53.439,-2.966,68,114,196,255,255,255
+Leicester City,King Power Stadium,"32,243",52.62,-1.142,68,114,196,255,192,0
+Liverpool,Anfield,"53,394",53.431,-2.961,255,0,0,255,255,255
+Manchester City,Etihad Stadium,"55,097",53.483,-2.2,189,215,236,0,0,0
+Manchester United,Old Trafford,"74,879",53.463,-2.291,255,0,0,0,0,0
+Newcastle United,St James' Park,"52,388",54.976,-1.622,0,0,0,255,255,255
+Norwich City,Carrow Road,"27,244",52.622,1.309,255,192,0,112,173,71
+Sheffield United,Bramall Lane,"32,125",53.37,-1.47,255,0,0,255,255,255
+Southampton,St Mary's Stadium,"32,505",50.906,-1.391,255,0,0,255,255,255
+Tottenham Hotspur,Tottenham Hotspur Stadium,"62,303",51.603,-0.065,68,114,196,255,255,255
+Watford,Vicarage Road,"22,220",51.65,-0.401,255,192,0,0,0,0
+West Ham United,London Stadium,"60,000",51.539,-0.017,103,14,54,189,215,236
+Wolverhampton Wanderers,Molineux Stadium,"32,050",52.59,-2.13,255,153,0,0,0,0

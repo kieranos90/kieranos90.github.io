@@ -1,0 +1,54 @@
+---
+title: "My_Map"
+author: "Kieran O'Sullivan"
+date: "5/5/2020"
+output: html_document
+---
+
+## Map
+
+This is a Map of the locations of all Premier League football grounds for the 2019-20 Season
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+library(leaflet)
+Premier_League <- read.csv("C:/Users/k.osullivan/Documents/Developing_Data_Products/Premier League Grounds.csv")
+
+Num_of_Teams <- nrow(Premier_League)
+
+Premier_League_Icons <- makeAwesomeIcon(icon = rep("home", Num_of_Teams),
+                                        library = rep("glyphicon", Num_of_Teams),
+                                        spin = rep(FALSE, Num_of_Teams),
+                                        squareMarker = rep(TRUE, Num_of_Teams),
+                                        iconRotate = rep(0, Num_of_Teams),
+                                        font = rep("monospace", Num_of_Teams),
+                                        markerColor = rep("white", Num_of_Teams),
+                                        iconColor = rgb(Premier_League$MainR,
+                                                        Premier_League$MainG,
+                                                        Premier_League$MainB,
+                                                        maxColorValue = 255))
+
+Premier_League_Popups <- paste(sep = "<br/>",
+                               paste('<b style="color:rgb(',
+                                     Premier_League$MainR, ',',
+                                     Premier_League$MainG, ',',
+                                     Premier_League$MainB, ')">',
+                                Premier_League$Team, '</b>'),
+                               paste('<em style="color:rgb(',
+                                     Premier_League$MainR, ',',
+                                     Premier_League$MainG, ',',
+                                     Premier_League$MainB, ')">',
+                                     Premier_League$Stadium, '</em>'),
+                               paste('<em style="color:rgb(',
+                                     Premier_League$MainR, ',',
+                                     Premier_League$MainG, ',',
+                                     Premier_League$MainB, ')">',
+                                     Premier_League$Capacity, '</em>'))
+
+
+Z <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addAwesomeMarkers(lat = Premier_League$Latitude, lng = Premier_League$Longitude,
+                    popup = Premier_League_Popups,
+                    icon = Premier_League_Icons)
+Z
+```
